@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'MasonChronicles';
+  src: url('../Fonts/MasonChronicles/MasonChronicles.woff') format('woff'),
+       url('../Fonts/MasonChronicles/MasonChronicles.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+    background-color: #141218;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: top right 20%;
+}
+a {
+    outline: none;
+    text-decoration: none;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin-bottom: 90px;
+}
+    .menu-list {
+        margin-right: auto;
+        margin-left: 67px;
+        line-height: 16px;
+    }
+        .menu-link {
+            margin-right: 24px;
+            color: white;
+        }
+        .menu-link:last-child {
+            margin-right: 0;
+        }
+        .social-link {
+            margin-right: 21px;
+            text-decoration: none;
+        }
+        .social-link:last-child {
+            margin-right: 0;
+        }
+    .main-content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 85px;
+    }
+                .genre {
+                    display: block;
+                    margin-bottom: 16px;
+                }
+                .rating {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+                    .rating-number {
+                        font-size: 12px;
+                        line-height: 14px;
+                        margin-left: 9px;
+                    }
+                .main-title {
+                    font-family: 'MasonChronicles', serif;
+                    font-size: 76px;
+                    line-height: 89px;
+                    margin-bottom: 10px;
+                }
+                .main-description {
+                    max-width: 458px;
+                    font-size: 14px;
+                    line-height: 150%;
+                    margin-bottom: 40px;
+                }
+                .button {
+                    background-color: #9D2929;
+                    border-radius: 8px;
+                    color: white;
+                    border: none;
+                    padding: 22px 72px;
+                }
+            .play {
+                margin: auto;
+                background-color: #9D2929;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: none;
+                position: relative;
+            }
+            .play-image {
+                position: relative;
+                transform: translateX(5px);
+            }
+            .play::before {
+                content: '';
+                background-color: #9D2929;
+                width: 132px;
+                height: 132px;
+                opacity: 0.5;
+                border-radius: 50%;
+                position: absolute;
+                top: -16px;
+                left: -16px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        .swiper-container {
+            max-width: 420px;
+            margin-left: 0;
+        }
+
+/* Оформление слайдера */ 
+        /* .series {
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+        } */
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                margin-right: 30px;
+                padding: 13px;
+                width: 164px;
+                height: 113px;
+                border-radius: 8px;
+            }
+            .series-1 {
+                background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url('../img/Slider/card-image-1.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+            .series-2 {
+                background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url('../img/Slider/card-image-2.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+                .card-subtitle {
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-bottom: 2px;
+                }
+                .card-title {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+                .arrow {
+                    width: 32px;
+                    height: 23px;
+                    border: none;
+                    background-image: url('../img/arrow.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: transparent;
+                }
+.footer {
+    background-color: #141218;
+    padding: 20px 0;
+    margin-top: auto;
+}
+        .footer-content {
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+        }
+                .copyright {
+                    color: #3a383d;
+                }
+            .footer-menu {
+                cursor: pointer;
+            }
+                .footer-link {
+                    text-decoration: none;
+                    outline: none;
+                    color: #3a383d;
+                    padding-left: 25px;
+                }
+    
+
+
+
+
+/* .logo, .menu-list, .social {
+    display: inline-block;
+}
+
+.social {
+    float: right;
+} */
